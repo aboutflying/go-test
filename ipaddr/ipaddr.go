@@ -2,9 +2,10 @@ package main
 
 import "fmt"
 
+// IPAddr - 4 byte array to store IP Address
 type IPAddr [4]byte
 
-func (i IPAddr) String() string {
+func (i *IPAddr) String() string {
 	return fmt.Sprintf("%v.%v.%v.%v", i[0], i[1], i[2], i[3])
 }
 
